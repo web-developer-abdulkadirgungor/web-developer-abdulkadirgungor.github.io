@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Başlık ve Meta Etiketleri Dördüncü Kez Özgünleştirildi -->
+    <title>Abdulkadir Güngör - Web Design & Developer | Dijital Simya: Kodu Anlama Dönüştürmek</title>
+    <meta name="description" content="Abdulkadir Güngör'ün gözünden Web Tasarım ve Geliştirme'nin simyasal süreci. Fikirlerin dijital maddeye dönüşümü, kodun elementleri, kullanıcı deneyiminin altın oranı ve etik damıtma üzerine felsefi bir keşif.">
+    <meta name="keywords" content="Abdulkadir Güngör, Web Design, Web Developer, Dijital Simya, Kod Dönüşümü, Frontend Elementleri, Backend Formülleri, Fullstack Sentezi, JavaScript İksirleri, HTML Temelleri, CSS Biçimleri, Teknoloji ve Dönüşüm, Deneyim Tasarımı Simyası, Akışkan Arayüzler, Mobil Uyumluluk İksiri, CV Deneyimleri, Özgeçmiş Bilgileri, Github Deneyleri, Linkedin Bağlantıları, Kod Felsefesi, Sorumlu Geliştirme, Kullanıcı Odaklı Simya, Siber Güvenlik Formülleri">
+    <meta name="author" content="Abdulkadir Güngör">
+
+    <style>
+        /* Genel Resetleme ve Temel Ayarlar */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px; /* Responsive font boyutu için temel */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden; /* Yatay kaydırmayı engelle */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Konteyner */
+        .container {
+            width: 90%;
+            max-width: 1100px; /* İçeriğin okunabilir genişliği */
+            margin: 0 auto;
+            padding: 2rem 1rem; /* Üst/alt ve yan boşluklar */
+        }
+
+        /* Ana İçerik Alanı */
+        main {
+            flex-grow: 1; /* Footer'ı sayfanın altına itmek için */
+        }
+
+        /* Başlıklar */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem); /* Responsive başlık boyutu */
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+            color: #0056b3;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            margin-top: 2.5rem;
+            color: #2c3e50;
+            border-left: 4px solid #007bff;
+            padding-left: 0.8rem;
+        }
+
+        h3 {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-top: 2rem;
+            color: #34495e;
+        }
+
+        /* Paragraflar */
+        p {
+            margin-bottom: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem); /* Responsive metin boyutu */
+            text-align: justify;
+        }
+
+        /* Bağlantılar */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover, a:focus {
+            color: #0056b3;
+            text-decoration: underline;
+            outline: 2px solid transparent; /* Odaklanma stilini belirginleştir */
+            outline-offset: 2px;
+        }
+
+        /* Kod Blokları (Örnek) */
+        pre {
+            background-color: #2d2d2d;
+            color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto; /* Uzun kod satırları için kaydırma */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            margin: 1.5rem 0;
+            white-space: pre-wrap; /* Satırları sar */
+            word-wrap: break-word; /* Kelimeleri böl */
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e9ecef;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            font-size: inherit; /* Pre içindeki code için boyut ayarı */
+        }
+
+        /* Listeler */
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Alıntılar */
+        blockquote {
+            border-left: 5px solid #007bff;
+            margin: 1.5rem 0;
+            padding: 1rem 1.5rem;
+            background-color: #e9ecef;
+            font-style: italic;
+            color: #555;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+        }
+
+        /* Resimler (Eğer eklenirse) */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ayırıcı Çizgi */
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+            margin: 3rem 0;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem; /* Bağlantılar arası boşluk */
+        }
+
+        .footer-links li {
+            margin-bottom: 0; /* Liste elemanlarının alt boşluğunu kaldır */
+        }
+
+        .footer-links a {
+            color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        .footer-links a:hover, .footer-links a:focus {
+            color: #bdc3c7;
+            text-decoration: underline;
+        }
+
+        .copyright {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            margin-top: 1rem;
+        }
+
+        /* Responsive Tasarım Ayarlamaları */
+
+        /* Tabletler ve Küçük Masaüstleri (768px ve üzeri) */
+        @media (min-width: 768px) {
+            .container {
+                width: 85%;
+                padding: 2.5rem 1.5rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Büyük Masaüstleri (1024px ve üzeri) */
+        @media (min-width: 1024px) {
+            .container {
+                width: 80%;
+                /* max-width: 1100px; */ /* Zaten yukarıda tanımlı */
+            }
+            /* Belki font boyutunu biraz daha ayarlayabiliriz */
+        }
+
+        /* Erişilebilirlik İyileştirmeleri */
+        *:focus {
+            outline: 3px dashed #0056b3;
+            outline-offset: 2px;
+        }
+        /* Odaklanma stillerini sadece klavye ile gezinildiğinde göstermek için (opsiyonel) */
+        body:not(.user-is-tabbing) *:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Başlık Aynı Kalıyor -->
+            <h1>Abdulkadir Güngör - Web Design & Developer</h1>
+        </header>
+
+        <main>
+            <!-- İçerik Dördüncü Kez, "Dijital Simya" Temasıyla Yeniden Yazıldı -->
+            <section id="giris-dorduncu">
+                <h2>Başlangıç Maddesi: Fikirleri Dijital Cevhere Dönüştürmek</h2>
+                <p>
+                    Web tasarımı ve geliştirme, modern çağın simyasına benzer bir süreçtir. Ham fikirleri, soyut kavramları alır ve onları elle tutulur, etkileşimli dijital gerçekliklere dönüştürürüz. Bu, basit bir teknik işlemden çok daha fazlasıdır; bir dönüşüm sanatı, bir yaratım ritüelidir. Ben, <strong>Abdulkadir Güngör</strong>, bu dijital simya laboratuvarında, sadece işlevsel kodlar değil, aynı zamanda kullanıcı ruhuna dokunan, anlam ve değer taşıyan "iksirler" hazırlama peşindeyim. Bu metin, bir <strong>Web Design & Developer</strong> olarak, kodun elementlerine, tasarımın formüllerine ve bu büyüleyici dönüşüm sürecinin felsefi boyutlarına kişisel bir bakış açısı sunmaktadır. Web, sürekli değişen formüllerle yeni bileşiklerin (deneyimlerin) yaratıldığı devasa bir simya kazanıdır.
+                </p>
+                <p>
+                    Her proje, değersiz görünen bir 'kurşun' (bir problem veya ihtiyaç) ile başlar ve amaç onu 'altına' (değerli bir çözüm veya deneyim) dönüştürmektir. Bu dönüşüm, geliştiricinin hem analitik zekasını (formülleri bilmek) hem de sezgisel bilgeliğini (elementleri doğru oranlarda birleştirmek) gerektirir. İnsanların niyetlerini ve duygularını, makinelerin işleyebileceği mantıksal yapılara tercüme etmek, bu simyanın en kritik aşamasıdır. Bu süreçteki denemelerimi ve vardığım sonuçları yansıtan çalışmalarımı <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a> adresindeki ana üssümde ve daha deneysel çalışmalarımın yer aldığı <a href="https://abdulkadirgungor86.github.io/" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör - Kişisel Web Site</a> platformunda bulabilirsiniz.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="kodun-elementleri">
+                <h2>Kodun Gizli Formülü: Elementlerin Düzeni ve Saflığı</h2>
+                <p>
+                    Kodlama, dijital simyanın temel taşıdır; fikirleri maddeye dönüştüren formüllerin yazıldığı yerdir. Ancak bu formüllerin gücü, sadece içerdikleri komutlarda değil, aynı zamanda elementlerin (değişkenler, fonksiyonlar, sınıflar) düzenlenme biçiminde ve saflığında yatar. İyi yazılmış bir kod, tıpkı usta bir simyacının hassas ölçülerle hazırladığı bir iksir gibi, dengeli, saf ve etkilidir. Okunabilirliği, tutarlılığı ve modülerliği, formülün sadece çalışmasını değil, aynı zamanda anlaşılmasını ve gelecekte geliştirilebilmesini sağlar.
+                </p>
+                <p>
+                    Kodun saflığı, gereksiz karmaşıklıktan arındırılmış olması, her elementin belirli bir amaca hizmet etmesi ve formülün genel amacının açıkça görülebilmesi anlamına gelir. İsimlendirme konvansiyonları, kodun kendini belgelemesi, mantıksal ayrıştırma gibi prensipler, bu saflığı korumanın ve formülün gücünü artırmanın yollarıdır. Bu içsel kalite, son kullanıcının deneyimlediği ürünün performansına, kararlılığına ve genel hissiyatına doğrudan yansır. Temiz ve düzenli bir formül, daha güvenilir ve etkili bir sonuç doğurur. Kodlama pratiğimdeki bu yaklaşımı ve deneylerimi <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github Yazılım</a> laboratuvarımda inceleyebilirsiniz. Güvenlik ise bu formüllerin dış etkenlere karşı direncini sağlar; bu konudaki araştırmalarım <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github CyberSecurity</a> sayfasında görülebilir.
+                </p>
+                <blockquote>
+                    "Basitlik, karmaşıklığın ötesindeki zarafettir." – Steve Jobs (Kodlamada saflık ve etkinliğin önemini yansıtan bir düşünce.)
+                </blockquote>
+                <p>
+                    Yazdığımız formüller, sadece makineler için değil, aynı zamanda bizimle aynı laboratuvarda çalışan veya bizden sonra çalışacak diğer simyacılar (geliştiriciler) içindir. Bu nedenle, kodun açıklığı ve mantıksal tutarlılığı, sadece teknik bir zorunluluk değil, aynı zamanda bilgi paylaşımının ve kolektif ilerlemenin temelidir.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="deneyim-simyasi">
+                <h2>Deneyim Simyası: Kullanıcı Odaklı Altın Oranı Bulmak</h2>
+                <p>
+                    Dijital ürünler, kullanıcıların etkileşimde bulunduğu, görevlerini yerine getirdiği ve bilgiye ulaştığı ortamlardır. Bu ortamların tasarımı, bir simyacının farklı elementleri ustaca birleştirerek arzu edilen sonucu elde etme çabasına benzer. Hedef, sadece işlevsel bir yapı değil, aynı zamanda kullanıcıyı memnun eden, ona rehberlik eden ve hatta ilham veren, dengeli ve uyumlu bir deneyim yaratmaktır. <strong>Abdulkadir Güngör</strong> olarak ben, bu "deneyim simyası"nda, teknolojinin gücünü insan ihtiyaçları ve beklentileriyle harmanlayarak dijital dünyanın "altın oranını" yakalamaya çalışıyorum.
+                </p>
+                <p>
+                    Kullanıcı Deneyimi (UX), bu simyanın temel taşıdır; kullanıcının ruh halini, motivasyonlarını, hedeflerini ve potansiyel acı noktalarını anlamak için yapılan derinlemesine bir analizdir. Bu analiz, hangi elementlerin hangi oranlarda kullanılacağını belirler. Kullanıcı Arayüzü (UI) ise bu formülün görsel ve etkileşimsel tezahürüdür; renk paletleri, tipografi, düzen, ikonografi ve mikro etkileşimler aracılığıyla deneyimi somutlaştırır. Başarılı bir deneyim simyası, teknolojiyi görünmez kılar ve kullanıcının sadece hedefine odaklanmasını sağlar. Bu alandaki çalışmalarım ve yetkinliklerim hakkında daha fazla bilgi <a href="https://abdulkadirgungor86.github.io/cv" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör - Özgeçmiş CV</a> belgesinde mevcuttur.
+                </p>
+                <p>
+                    Bu simyasal karışımın farklı kaplarda (cihazlarda) da aynı etkiyi göstermesi gerekir. Responsive (duyarlı) tasarım, bu uyumluluğu sağlayan "evrensel çözücü" gibidir. Tasarımın ve içeriğin, kullanıcının erişim noktasına (masaüstü, tablet, mobil) göre akışkan bir şekilde adapte olması, deneyimin bütünlüğünü ve etkinliğini korur. Bu, katı kalıplar yerine, dönüşebilen, esnek yapılar tasarlamayı gerektirir. Tıpkı bir iksirin farklı sıcaklıklarda özelliklerini koruması gibi, iyi bir dijital deneyim de farklı ekran boyutlarında değerini yitirmemelidir. Bu, hem teknik bir maharet hem de kullanıcıya her ortamda saygı gösterme ilkesidir.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="yaratici-katalizor">
+                <h2>Yaratıcı Katalizör: Mantık ve Sezginin Dönüştürücü Gücü</h2>
+                <p>
+                    Web geliştirme süreci, katı mantık ve algoritmik düşünce ile sınırsız yaratıcılık ve sezgisel problem çözme arasında gidip gelen bir danstır. Teknolojinin sunduğu kurallar ve yapılar bir çerçeve çizse de, gerçek yenilik ve zarafet, bu çerçevenin içinde veya bazen onu zorlayarak ortaya çıkar. Bir <strong>Web Design & Developer</strong> olarak, bu süreçte bir katalizör görevi görürüz; mantıksal elementleri alır, yaratıcı enerjiyle birleştirir ve ortaya yeni, değerli bir bileşik (dijital ürün) çıkarırız. Yaratıcılık burada sadece estetik bir dokunuş değil, aynı zamanda beklenmedik bağlantılar kurma, verimli yollar bulma ve karmaşıklığı basitleştirme yeteneğidir.
+                </p>
+                <p>
+                    Teknolojiler (programlama dilleri, framework'ler, araçlar) bizim simya malzemelerimizdir. Onları etkili kullanmak, sadece formüllerini ezberlemek değil, aynı zamanda her bir elementin doğasını, diğerleriyle nasıl etkileşime girdiğini ve hangi koşullarda en iyi sonucu verdiğini anlamaktır. Bir malzemeyi derinden tanımak, onunla standart prosedürlerin ötesine geçerek özgün ve güçlü karışımlar yaratma imkanı sunar. Bu, sürekli deney yapmayı, sonuçları gözlemlemeyi ve öğrenmeyi içeren aktif bir keşif sürecidir.
+                </p>
+                <p>
+                    Bu süreç, insan zekasının (sezgi, empati, yaratıcılık) ve makine mantığının (hız, tutarlılık, hesaplama gücü) birbirini tamamladığı bir ortaklıktır. En başarılı dijital dönüşümler, bu iki gücün sinerjisinden doğar; teknolojiyi, insani amaçlara hizmet edecek şekilde ustaca yönlendirir. Bu dinamik etkileşim üzerine düşüncelerimi paylaştığım ve sektördeki diğer "simyacılarla" bağlantı kurduğum yerlerden biri <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Linkedin</a> profilimdir. Fikir alışverişi, bu alandaki katalitik etkiyi artırır.
+                </p>
+                 <p>
+                    Dijital simya alanı sürekli yeni elementler ve formüllerle (yapay zeka, yeni web paradigmaları) zenginleşiyor. Bu durum, geliştiricinin rolünü de dönüştürüyor. Gelecekte belki daha az manuel karıştırma (kodlama), daha çok formül tasarlama (sistem mimarisi), süreci denetleme (yapay zeka yönetimi) ve etik sonuçları değerlendirme ön planda olacak. Ancak temel katalizörler – merak, öğrenme arzusu, problem çözme tutkusu – bu dönüşümde de yol gösterici olmaya devam edecektir.
+                </p>
+            </section>
+
+            <hr>
+
+             <section id="etik-damitma">
+                <h2>Etik Damıtma: Sorumlu Geliştirmenin Saf Özü</h2>
+                <p>
+                    Dijital dünyayı şekillendirirken yarattığımız ürünler, sadece kod ve tasarımdan ibaret değildir; aynı zamanda kullanıcıların güvenini, mahremiyetini ve dijital refahını etkileyen güçlü araçlardır. Bu nedenle, geliştirme sürecinde etik ilkeleri bir damıtma işlemi gibi kullanarak, projenin saf özünü ortaya çıkarmak ve potansiyel zararlı yan ürünleri ayrıştırmak kritik bir sorumluluktur. Bir <strong>Web Design & Developer</strong> olarak, bu etik damıtma sürecini her projenin kalbine yerleştirmek, sadece iyi bir pratik değil, aynı zamanda ahlaki bir gerekliliktir.
+                </p>
+                <p>
+                    Kullanıcı verilerinin korunması ve şeffaf kullanımı, bu damıtma sürecinin en önemli aşamalarındandır. Verilerin neden ve nasıl toplandığını açıkça belirtmek, kullanıcı rızasını almak ve bu değerli "özütü" (veriyi) en yüksek güvenlik standartlarıyla korumak esastır. Güvenlik açıkları, formülün kirlenmesi gibidir ve kullanıcılar için ciddi sonuçlar doğurabilir. Güvenlik bilincini ve sağlam savunma mekanizmalarını projenin her aşamasına entegre etmek (<a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör Github CyberSecurity</a>), bu etik saflığı korumanın teknik yoludur. Güvenlik, sonradan eklenen bir filtre değil, damıtma sürecinin kendisidir.
+                </p>
+                <p>
+                    Dijital erişilebilirlik ve kapsayıcılık, etik damıtmanın bir diğer vazgeçilmez unsurudur. Yarattığımız dijital deneyimlerin, tüm potansiyel kullanıcılar tarafından, yetenekleri veya engelleri ne olursa olsun, eşit şekilde erişilebilir ve kullanılabilir olmasını sağlamak hedeflenmelidir. Bu, sadece teknik standartlara uymak değil, aynı zamanda farklı ihtiyaçları olan insanları tasarım sürecinin merkezine koyan, empatik bir yaklaşımdır. Erişilebilir bir web, daha saf, daha adil ve daha evrensel bir dijital öz sunar.
+                </p>
+                 <p>
+                    Son olarak, geliştirdiğimiz algoritmaların ve tasarımların potansiyel önyargılardan arındırılması için bilinçli bir çaba göstermeliyiz. Teknoloji, yaratıcılarının değerlerini ve kör noktalarını yansıtabilir. Bu nedenle, farklı kullanıcı grupları üzerindeki potansiyel etkileri dikkatle değerlendirmek, çeşitliliği teşvik etmek ve adil olmayan sonuçları önlemek için proaktif adımlar atmak gerekir. Etik damıtma, sürekli dikkat, özeleştiri ve iyileştirme gerektiren dinamik bir süreçtir.
+                </p>
+            </section>
+
+            <hr>
+
+            <section id="gelecek-iksiri">
+                <h2>Geleceğin İksiri: Sürekli Dönüşüm ve Keşfin Bitmeyen Arayışı</h2>
+                <p>
+                    Web'in simya kazanı sürekli kaynıyor; yeni elementler keşfediliyor, yeni formüller geliştiriliyor ve dönüşümün hızı hiç azalmıyor. Merkezi olmayan yapılar, yapay zeka ile zenginleşen arayüzler, sanal ve artırılmış gerçeklik katmanları, web'in gelecekteki "iksirini" şekillendiren unsurlardan sadece birkaçı. Bu dinamik ortam, bir geliştirici için sürekli bir keşif ve adaptasyon yolculuğu anlamına geliyor. Dünün bilgisi bugünün temeli, bugünün yeniliği ise yarının standardı olabilir.
+                </p>
+                <p>
+                    Bu sürekli dönüşüm denizinde yol almak, sadece yeni teknikleri öğrenmek değil, aynı zamanda temel simya prensiplerine (mantık, problem çözme, kullanıcı odaklılık, estetik) hakim olmayı gerektirir. Merak duygusu, öğrenme çevikliği ve değişime açık olmak, bu yolculukta en değerli pusulalardır. Web geliştirme, belirli araçlara bağımlı kalmaktan çok, temel kavramları anlamak ve yeni araçları bu temel üzerine inşa edebilme yeteneğidir.
+                </p>
+                <p>
+                    <strong>Abdulkadir Güngör</strong> olarak benim nihai hedefim, bu dijital simya sanatını kullanarak, teknoloji aracılığıyla insan hayatına değer katan, anlamlı bağlantılar oluşturan ve estetik haz sunan "iksirler" yaratmaktır. Bu arayışın izlerini, <a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">kişisel web sitemdeki</a> paylaşımlarımda, <a href="https://abdulkadirgungor86.github.io/" target="_blank" rel="noopener noreferrer">alternatif kişisel sitemdeki</a> projelerde, <a href="https://abdulkadirgungor86.github.io/cv" target="_blank" rel="noopener noreferrer">özgeçmişimde</a> belgelenen deneyimlerde, <a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Github'daki kod deneylerimde</a>, <a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">güvenlik araştırmalarımda</a> ve <a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">profesyonel çevremle</a> olan etkileşimlerimde görebilirsiniz. Gelecek hangi formülleri getirirse getirsin, yaratma tutkusu ve daha iyi bir dijital dünya arayışı, bu bitmeyen simya yolculuğunun özünü oluşturacaktır.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer ve Script Bölümü Değiştirilmedi -->
+    <footer class="site-footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="https://abdulkadirgungor.com" target="_blank" rel="noopener noreferrer">Abdulkadir Güngör</a></li>
+                <li><a href="https://abdulkadirgungor86.github.io/" target="_blank" rel="noopener noreferrer">Kişisel Web Site</a></li>
+                <li><a href="https://abdulkadirgungor86.github.io/cv" target="_blank" rel="noopener noreferrer">Özgeçmiş CV</a></li>
+                <li><a href="https://github.com/abdulkadirgungor86" target="_blank" rel="noopener noreferrer">Github Yazılım</a></li>
+                <li><a href="https://github.com/abdulkadir-gungor" target="_blank" rel="noopener noreferrer">Github CyberSecurity</a></li>
+                <li><a href="https://www.linkedin.com/in/abdulkadir-güngör" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+            <p class="copyright">© <span id="current-year"></span> Abdulkadir Güngör. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basit bir script: Copyright yılı otomatik olarak güncellenir.
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Klavye ile gezinme tespiti (Erişilebilirlik için)
+        function handleFirstTab(e) {
+            if (e.key === 'Tab') { // 'Tab' tuşuna ilk basıldığında
+                document.body.classList.add('user-is-tabbing');
+                window.removeEventListener('keydown', handleFirstTab);
+                window.addEventListener('mousedown', handleMouseDownOnce); // Fare tıklamasını dinle
+            }
+        }
+
+        function handleMouseDownOnce() {
+            document.body.classList.remove('user-is-tabbing');
+            window.removeEventListener('mousedown', handleMouseDownOnce);
+            window.addEventListener('keydown', handleFirstTab); // Tekrar Tab dinlemeye başla
+        }
+
+        window.addEventListener('keydown', handleFirstTab);
+
+        console.log("Abdulkadir Güngör - Web Design & Developer sayfası (dördüncü benzersiz içerik - Dijital Simya) başarıyla yüklendi.");
+        // Buraya daha fazla JavaScript kodu eklenebilir (örn. animasyonlar, interaktif öğeler vb.)
+    </script>
+
+</body>
+</html>

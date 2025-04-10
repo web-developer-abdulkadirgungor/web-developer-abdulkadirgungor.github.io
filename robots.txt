@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://web-developer-abdulkadirgungor.github.io/sitemap.xml 
